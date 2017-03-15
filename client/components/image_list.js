@@ -8,9 +8,12 @@ const IMAGES = [
 ];
 
 const ImageList = () => {
+  const RenderedImages = IMAGES.map(function(image) {
+    return <ImageDetail />
+  });
   return (
     <ul>
-      <ImageDetail />
+      {RenderedImages}
     </ul>
   );
 }
