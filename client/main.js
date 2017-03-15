@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 
 const App = () => {
   return (
-    <div>React App#1</div>
+    <div>React App</div>
   );
 };
-
-ReactDOM.render(<App />, document.querySelector('.container'));
+Meteor.startup(() => {
+  ReactDOM.render(<App />, document.querySelector('.container'));
+})
